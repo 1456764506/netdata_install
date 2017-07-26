@@ -4,11 +4,12 @@ netdata 是一个分布式实时性能和健康监控系统。netdata 可以实�
 
 目前 netdata 可以运行在：Linux 发行版、FreeBSD 和 MacOS 上。
 
+netdata源码：https://github.com/firehol/netdata
+
 官方虽然提供了一键安装脚本（相信我，这跟那些坑爹的 lnmp 的一键安装脚本不一样，自从用过那些脚本后，我再也不相信“一键”了……）和一键依赖安装脚本（如果你懒到连 apt-get 或 yum 都不愿意用的话），你只需要使用 git clone 整个仓库然后运行安装脚本就好了。
 
 为了以后经常安装使用，所以将git clone的安装方式步骤写成了脚本。
 
-源码：https://github.com/firehol/netdata
 
 ### 脚本介绍
 netdata演示：https://my-netdata.io/
@@ -21,7 +22,7 @@ netdata演示：https://my-netdata.io/
 
 ### 安装方式
 
-    wget -O netdata_install.sh https://raw.githubusercontent.com/myxuchangbin/netdata_install/master/netdata_install.sh && bash install.sh
+    wget https://raw.githubusercontent.com/myxuchangbin/netdata_install/master/netdata_install.sh && bash netdata_install.sh 
 
 	
 ### 问题反馈
