@@ -8,8 +8,10 @@ netdata 是一个分布式实时性能和健康监控系统。netdata 可以实�
 
 为了以后经常安装使用，所以将git clone的安装方式步骤写成了脚本。
 
+源码：https://github.com/firehol/netdata
+
 ### 脚本介绍
-演示：https://my-netdata.io/
+netdata演示：https://my-netdata.io/
 
 操作系统：支持CentOS6+、Ubuntu12+、Debian6+
 
