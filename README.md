@@ -12,13 +12,12 @@ netdata源码：https://github.com/firehol/netdata
 
 
 ### 脚本介绍
-netdata演示：https://my-netdata.io/
+netdata官方演示：https://my-netdata.io/
 
 操作系统：支持CentOS6+、Ubuntu12+、Debian6+
 
 脚本特性：
-1.脚本自动开启防火墙端口
-2.脚本优化netdata占用内存
+1.自动优化netdata占用内存问题
 
 ### 安装方式
 
