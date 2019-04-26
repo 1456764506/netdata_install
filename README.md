@@ -17,7 +17,7 @@ netdata官方演示：https://my-netdata.io/
 操作系统：支持CentOS6+、Ubuntu12+、Debian6+
 
 脚本特性：
-1.自动优化netdata占用内存问题
+1. 自动优化netdata占用内存问题
 
 ### 安装方式
 
