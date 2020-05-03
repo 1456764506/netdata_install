@@ -122,8 +122,9 @@ fi
 
 zip_check(){
 if [ "$OS" == "CentOS" ];then
-    yum install -y wget svn bash-completion net-tools lsof rsync gcc-c++ screen vim lrzsz axel autoconf automake curl gcc git libmnl-devel libuuid-devel lm_sensors make MySQL-python nc pkgconfig python python-psycopg2 PyYAML zlib-devel python-yaml iproute python-pymongo libmnl
-    if [ $? -ne 0]; then
+    yum install -y epel-release
+    yum install -y wget bash-completion net-tools gcc-c++ autoconf automake curl gcc git libuv-devel libmnl-devel libuuid-devel lm_sensors make cmake MySQL-python nc pkgconfig python python-psycopg2 PyYAML zlib-devel python-yaml iproute python-pymongo libmnl
+    if [ $? -ne 0 ]; then
         echo "netdata依赖软件安装出错，请联系管理员admin@91linux.org。"
         exit 1
     fi
@@ -133,7 +134,7 @@ if [ "$OS" == "CentOS" ];then
     unzip -v >/dev/null 2>&1
     [ ! $?  -eq 0 ]&&yum install -y unzip &&echo "yum installing unzip"
 elif [ "$OS" == "Ubuntu" ] || [ "$OS" == "Debian" ];then
-    sudo apt-get install -y wget bash-completion net-tools lsof rsync screen vim lrzsz sysv-rc-conf axel zlib1g-dev uuid-dev libmnl-dev gcc make git autoconf autoconf-archive autogen automake pkg-config curl iproute  python python-yaml python-pymongo python-psycopg2
+    sudo apt-get install -y wget bash-completion sysv-rc-conf axel zlib1g-dev uuid-dev libmnl-dev libuv-dev gcc make cmake git autoconf autoconf-archive autogen automake pkg-config curl iproute  python python-yaml python-pymongo python-psycopg2
     if [ $? -ne 0]; then
         echo "netdata依赖软件安装出错，请联系管理员admin@91linux.org。"
         exit 1
